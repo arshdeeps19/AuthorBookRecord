@@ -1,0 +1,41 @@
+﻿@model List<AuthorBookRecord.ViewModels.AuthorViewModel>
+
+<h2>Authors</h2>
+
+<p>
+    @Html.ActionLink("Create New Author", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Country)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AuthorId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AuthorId })
+            </td>
+        </tr>
+    }
+</table>
+
