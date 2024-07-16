@@ -13,7 +13,7 @@ namespace Infrastructure.Data.Repositories
         {
         }
 
-        public List<T> GetAll()
+        public List<Book> GetAll()
         {
             return _dbSet.Include(b => b.Author).ToList();
         }

@@ -20,7 +20,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -66,10 +66,6 @@
     <ProjectReference Include="..\Domain_Layer\Domain_Layer.csproj">
       <Project>{ff23e179-2c52-4e72-85da-d0d66a0cd6d1}</Project>
       <Name>Domain_Layer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Infrastructure_Layer\Infrastructure_Layer.csproj">
-      <Project>{f943502d-1f03-4203-9b71-bedd58cfccb5}</Project>
-      <Name>Infrastructure_Layer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
